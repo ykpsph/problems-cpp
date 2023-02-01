@@ -1,3 +1,8 @@
+/*
+find largest three elements in array
+*/
+
+
 #include<iostream>
 
 void find3Largest(int arr[], int n){
@@ -14,7 +19,7 @@ void find3Largest(int arr[], int n){
       first = arr[i];
     } else if(arr[i] > second){
       third = second;
-      second = first;
+      second = arr[i];
     } else if(arr[i] > third){
       arr[i] = third;
     }
